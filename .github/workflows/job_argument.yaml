@@ -9,7 +9,7 @@ on:
       debug_mode:
         type: boolean
         description: 'Debug'
-        default: 'QUE TAL'
+        default: ''
         required: false
       sample_value:
         type: string
@@ -32,4 +32,4 @@ jobs:
       - name: First step
         run: echo "Hello world!"
       - name: Second step
-        run: echo ${{github.event.inputs.debug_mode}}
+        run: echo ${{github.event.inputs.sample_value}}
