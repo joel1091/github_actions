@@ -1,0 +1,32 @@
+name: job-argument
+
+on:
+  workflow_dispatch:
+    inputs:
+      debug_mode:
+        type: boolean
+        description: 'Debug'
+        default: false
+        required: false
+      sample_value:
+        type: string
+        description: 'Sample value'
+        default: ''
+        required: false
+        
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: First step
+        run: echo "Bye world!"
+  
+  bye-world:
+    runs-on: ubuntu-latest
+    needs: hello-world
+    steps:
+      - name: First step
+        run: echo "Hello world!"
+      - name: Second step
+        run: echo "Bye world!"
