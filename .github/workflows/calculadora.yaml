@@ -23,5 +23,5 @@ jobs:
         run: |
           pytest -m unittest discover -s code/python -p "test_*.py"
       - name: Run Security checks
-      run: |
-        bandit -r code/python
+        run: |
+          bandit -r code/python
