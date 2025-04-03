@@ -20,10 +20,7 @@ jobs:
 
       - name: Install requirements
         run: |
-          COPY main.py .
-          COPY test_main.py .
-          COPY requirements.txt .
-          pip3 install -r requirements.txt
+          pip3 install -r code/python/requirements.txt
 
       - name: Run linters
         run: |
