@@ -1,0 +1,16 @@
+name: Label - Advice
+on:
+  label:
+    types: [created]
+    branches:
+      - 'main'
+    labels:
+      - 'python'
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: First step
+        run: echo ${{github.event.label.name}}
