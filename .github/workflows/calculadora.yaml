@@ -19,3 +19,9 @@ jobs:
       - name: Run linters
         run: |
           flake8 code/python
+      - name: Run tests
+        run: |
+          pytest -m unittest discover -s code/python -p "test_*.py"
+      - name: Run Security checks
+      run: |
+        bandit -r code/python
