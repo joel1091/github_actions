@@ -6,7 +6,7 @@ on:
       debug_mode:
         type: boolean
         description: 'Debug'
-        default: false
+        default: ''
         required: false
       sample_value:
         type: string
