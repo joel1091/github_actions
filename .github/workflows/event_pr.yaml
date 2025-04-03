@@ -1,10 +1,9 @@
-name: Event Commit - Single Job
-
+name: Event PR - Single Job
 on:
-  push:
+  pull_request:
     branches:
-      -'*'
-  
+      - 'main'
+
 jobs:
   hello-world:
     runs-on: ubuntu-latest
