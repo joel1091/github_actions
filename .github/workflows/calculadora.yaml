@@ -48,4 +48,3 @@ jobs:
         with:
           context: code/python
           push: true
-          tags: user/app:latest
