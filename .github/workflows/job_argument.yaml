@@ -9,7 +9,7 @@ on:
       debug_mode:
         type: boolean
         description: 'Debug'
-        default: ''
+        default: 'QUE TAL'
         required: false
       sample_value:
         type: string
