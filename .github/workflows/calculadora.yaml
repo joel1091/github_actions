@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -20,6 +20,9 @@ jobs:
 
       - name: Install requirements
         run: |
+          COPY main.py .
+          COPY test_main.py .
+          COPY requirements.txt .
           pip3 install -r requirements.txt
 
       - name: Run linters
