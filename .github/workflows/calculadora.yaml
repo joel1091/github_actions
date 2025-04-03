@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Run linters
-        run |
+        run: |
           flake8 code/python
 
         
