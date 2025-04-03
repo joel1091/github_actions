@@ -46,6 +46,5 @@ def main():
             print("Opción no válida. Selecciona una opción entre 1 y 5.")
 
 
-# Ejecutar la calculadora
 if __name__ == "__main__":
     main()
