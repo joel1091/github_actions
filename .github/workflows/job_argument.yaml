@@ -1,6 +1,9 @@
 name: job-argument
 
 on:
+  push:
+    branches:
+      -'*'
   workflow_dispatch:
     inputs:
       debug_mode:
