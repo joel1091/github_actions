@@ -1,0 +1,17 @@
+name: Test Calculator
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test_calculator:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run linters
+        run |
+          flake8 code/python
+
+        
