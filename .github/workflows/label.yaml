@@ -13,4 +13,4 @@ jobs:
 
     steps:
       - name: First step
-        run: echo "La etiqueta que acabas de crear se llama: "${{github.event.label.name}}
+        run: echo "La etiqueta que acabas de crear se llama: ${{ github.event.label.name }}"
