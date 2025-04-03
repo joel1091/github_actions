@@ -1,4 +1,4 @@
-name: First_action_joel
+name: Second_action_joel
 on:
   workflow_dispatch:
 
@@ -6,5 +6,5 @@ jobs:
   hello-world:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello Step
-        run: echo "Hello world!"
+      - name: Bye Step
+        run: echo "Bye world!"
